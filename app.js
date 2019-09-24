@@ -25,13 +25,11 @@ const students = [
 		gender: 'male',
 	},
 ];
-let maleStudentNo = 0;
-let femaleStudentNo = 0;
-
+const studentGender = { male: 0, female: 0 };
 students.forEach((student) => {
-	return student.gender === 'male' ? maleStudentNo++ : femaleStudentNo++;
+	// eslint-disable-next-line no-return-assign
+	return student.gender === 'male' ? (studentGender.male += 1) : (studentGender.female += 1);
 });
-const newStudents = students.map((student) => student.name);
-console.log(femaleStudentNo);
-console.log(maleStudentNo);
-console.log(newStudents);
+const newStudentNAme = students.map((student) => student.name);
+console.log(studentGender);
+console.log(newStudentNAme);
