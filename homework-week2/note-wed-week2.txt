@@ -1,0 +1,8 @@
+use streaming method for handling large files
+raw data: binary data
+buffer => byte array
+most important is handling with buffer (byte array)
+handle picture 
+
+CLI: --
+#!/usr/bin/env node (write this on top of program)
