@@ -1,6 +1,6 @@
-const prompts = require('prompts');
-const chalk = require('chalk');
-const moment = require('moment');
+const prompts = require('./node_modules/prompts');
+const chalk = require('./node_modules/chalk');
+const moment = require('./node_modules/moment');
 function baitap1(info = {}) {
 	const checkAge = new Promise((resolve, reject) => {
 		resolve(
