@@ -4,7 +4,12 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "prettier": "^1.18.2"
+    "chalk": "^2.4.2",
+    "date-fns": "^2.4.1",
+    "moment": "^2.24.0",
+    "prettier": "^1.18.2",
+    "prompts": "^2.2.1",
+    "xlsx": "^0.15.1"
   },
   "devDependencies": {
     "eslint": "^6.4.0",
