@@ -11,14 +11,12 @@ fs.readFile(path.join(__dirname, '/products.json'), 'utf8', (err, data) => {
 		});
 		dataConverted.forEach((product) => {
 			const fromNow = timeFromNow(product['dateUpdated']);
-			const price = formatMoney(product['price']);
-			console.log(`${product['name']} - ${price} VND - Cập nhật cách đây: ${fromNow}`);
+			console.log(
+				`${product['name']} - ${product['price']} VND - Cập nhật cách đây: ${fromNow}`,
+			);
 		});
 	}
 });
-const formatMoney = (money) => {
-	return `${money.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
-};
 
 const timeFromNow = (dateUpdated) => {
 	return formatDistance(new Date(dateUpdated), new Date(), { locale: viLocale });
