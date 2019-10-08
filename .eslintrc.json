@@ -23,6 +23,7 @@
 		"no-unused-vars": "warn",
 		"import/no-unresolved": "warn",
 		"no-use-before-define": "warn",
-		"import/newline-after-import": "off"
+		"import/newline-after-import": "off",
+		"indent": ["error", 2]
 	}
 }
